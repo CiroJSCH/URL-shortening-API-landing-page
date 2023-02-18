@@ -6,8 +6,8 @@ import { statistics } from '@/constants/statistics';
 
 const Statistics = () => {
   return (
-    <section className='bg-gray-500 px-4 pb-16'>
-      <div className='text-center mb-3'>
+    <section className='bg-gray-500 px-6 pb-20'>
+      <div className='text-center'>
         <h3 className='text-gray-700 text-[26px] font-bold mb-3'>
           Advanced Statistics
         </h3>
@@ -16,7 +16,7 @@ const Statistics = () => {
           statistics dashboard.
         </p>
       </div>
-      <section className='relative mt-20'>
+      <section className='relative mt-24'>
         <div className='flex flex-col gap-24'>
           {statistics.map((statistic, index) => (
             <StatisticCard {...statistic} key={`statistic-${index}`} />
