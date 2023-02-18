@@ -15,6 +15,10 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      backgroundImage: {
+        'boost-mobile': "url('@/assets/images/bg-boost-mobile.svg')",
+        'boost-desktop': "url('@/assets/images/bg-boost-desktop.svg')",
+      },
     },
     screens: {
       xl: '1440px',
