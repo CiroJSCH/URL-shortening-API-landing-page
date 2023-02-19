@@ -10,7 +10,7 @@ import Logo from '@/assets/images/logo.svg';
 // Icons
 import { TfiMenu } from 'react-icons/tfi';
 
-const desktopLinkStyle = "cursor-pointer hover:text-gray-800 font-bold transition-colors duration-300 ease-in-out";
+const desktopLinkStyle = "cursor-pointer hover:text-gray-800 transition-colors duration-300 ease-in-out";
 
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
         {/* MOBILE MENU */}
         <div
-          className={`absolute bg-primary-violet px-8 w-full z-[1000] rounded-lg flex-col items-center mt-6 ${
+          className={`absolute bg-primary-violet px-8 w-full max-w-[475px] left-0 right-0 m-auto z-[1000] rounded-lg flex-col items-center mt-6 ${
             isOpenMenu ? 'flex' : 'hidden'
           }`}
         >
