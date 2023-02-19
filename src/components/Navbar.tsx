@@ -10,7 +10,7 @@ import Logo from '@/assets/images/logo.svg';
 // Icons
 import { TfiMenu } from 'react-icons/tfi';
 
-const desktopLinkStyle = "cursor-pointer hover:text-gray-800 font-bold transition-colors duration-300 ease-in-out text-[18px]";
+const desktopLinkStyle = "cursor-pointer hover:text-gray-800 font-bold transition-colors duration-300 ease-in-out";
 
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
