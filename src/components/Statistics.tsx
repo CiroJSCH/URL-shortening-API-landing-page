@@ -12,7 +12,7 @@ const cardMargins = [
 
 const Statistics = () => {
   return (
-    <section className='bg-gray-500 px-6 pb-20 xl:pb-24'>
+    <section className='bg-gray-500 px-6 pb-20 xl:pb-24 pt-20'>
       <div className='max-w-[1440px] m-auto xl:w-[80%] flex flex-col justify-center items-center'>
         <div className='text-center flex flex-col items-center'>
           <h3 className='text-gray-700 text-[26px] xl:text-[36px] font-bold mb-3'>
