@@ -56,12 +56,10 @@ const Shorten = () => {
           setValue('urlToShorten', '');
         })
         .catch((err) => {
-          if (err.response.data.error_code === 2) {
-            setError('urlToShorten', {
-              type: 'server',
-              message: 'Enter a valid URL',
-            });
-          }
+          setError('urlToShorten', {
+            type: 'server',
+            message: 'Enter a valid URL',
+          });
         });
     } else {
       clearErrors('urlToShorten');
@@ -90,12 +88,12 @@ const Shorten = () => {
               {...register('urlToShorten')}
             />
             {errors.urlToShorten?.types && (
-              <span className='text-red-400 absolute bottom-[-1.7rem] text-[14px]'>
+              <span className='text-red-400 absolute bottom-[-1.65rem] text-[14px]'>
                 {errors.urlToShorten?.types.required}
               </span>
             )}
             {errors.urlToShorten && (
-              <span className='text-red-400 absolute bottom-[-1.7rem] text-[14px]'>
+              <span className='text-red-400 absolute bottom-[-1.65rem] text-[14px]'>
                 {errors.urlToShorten.message}
               </span>
             )}
